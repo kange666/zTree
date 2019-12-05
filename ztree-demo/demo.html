@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <TITLE> ZTREE DEMO - no checkbox</TITLE>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!--<link rel="stylesheet" href="css/demo.css" type="text/css">-->
+    <link rel="stylesheet" href="zTreeStyle.css" type="text/css">
+    <script type="text/javascript" src="jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="jquery.ztree.core.js"></script>
+    <script type="text/javascript" src="jquery.ztree.excheck.js"></script>
+    <script type="text/javascript" src="demotree.js"></script>
+</HEAD>
+
+<BODY>
+<div>
+    <div style="height: 600px;width: 30%;background-color: white">
+        <div id="treeDemo" class="ztree"></div>
+    </div>
+
+    <!--存放选中节点的id-->
+    <input type="hidden" id="sel-ztree-id">
+    <!--存放选中节点的name-->
+    <input type="hidden" id="sel-ztree-name">
+    <!--保存选中节点按钮-->
+    <button class="btn  btn-success" onclick="onCheck()">保存</button>
+    <!--全选按钮-->
+    <button  class="btn  btn-primary"  onclick="CheckAllNodes()">全选</button>
+    <button  class="btn  btn-danger"  onclick="CancelAllNodes()">全不选</button>
+</div>
+
+</BODY>
+</HTML>

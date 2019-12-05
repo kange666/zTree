@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery-1.4.4.min.js"></script>
+    <!--<link rel="stylesheet" href="demo.css">-->
+    <link rel="stylesheet" href="zTreeStyle.css">
+    <script type="text/javascript" src="jquery.ztree.core.js"></script>
+    <script type="text/javascript" src="jquery.ztree.exedit.js"></script>
+
+</head>
+<body>
+<div>
+    <ul id="treeDemo" class="ztree"></ul>
+</div>
+    <script type="text/javascript">
+        var setting = {
+        };
+        var zNodes = [
+            {name:"字母",isParent:true , open:true , children:[
+                {name:"AAAA",value:1,isParent:true,children:[
+                    {name:"aaaa",value:2}
+                ]},
+                {name:"bbbb", value:1},
+                {name:"cccc",value:1}
+            ]},
+            {name:"数字",value:0,isParent:true,children:[
+                {name:"1111",value:1},
+                {name:"2222",value:1}
+            ]}
+        ];
+        $(document).ready(function () {
+            zTreeObj = $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+        })
+    </script>
+</body>
+</html>
